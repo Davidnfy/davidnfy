@@ -1,8 +1,24 @@
 const mobileMenuButton = document.getElementById('mobileMenuButton');
 const navLinks = document.getElementById('navLinks');
+const closeNavButton = document.getElementById('closeNavButton');
+const pageContent = document.getElementById('pageContent');
+
+function openNav() {
+  navLinks.classList.add('active');
+  pageContent.classList.add('blur');
+}
+
+function closeNav() {
+  navLinks.classList.remove('active');
+  pageContent.classList.remove('blur');
+}
 
 mobileMenuButton.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  openNav();
+});
+
+closeNavButton.addEventListener('click', () => {
+  closeNav();
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -18,7 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         behavior: 'smooth'
       });
 
-      navLinks.classList.remove('active');
+      closeNav();
     }
   });
 });

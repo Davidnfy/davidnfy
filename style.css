@@ -1,9 +1,13 @@
-/* Reset CSS */
+@font-face {
+  font-family: 'Myfont';
+  src: url('font/Magical-Stylish-Sans-Serif-Demo.otf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+   font-family: 'Myfont', sans-serif;
 }
 
 body {
@@ -12,7 +16,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Colors */
 :root {
   --primary: #3B82F6;
   --secondary: #93C5FD;

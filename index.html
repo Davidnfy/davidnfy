@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Profile</title>
-    <!-- Ensure GPT Engineer script is loaded before other scripts -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="uploads/D.png">
@@ -17,6 +16,7 @@
         <nav>
           <div class="logo">DavNfyy</div>
           <ul class="nav-links" id="navLinks">
+            <li class="close-button-container"><button id="closeNavButton" aria-label="Close menu">×</button></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">My Project</a></li>
@@ -27,6 +27,7 @@
       </div>
     </header>
 
+    <div id="pageContent">
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="container">
